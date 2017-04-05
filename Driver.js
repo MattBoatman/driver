@@ -6,22 +6,31 @@ class Driver {
         this.totalMiles = 0;
     }
     recordDrive(mph, miles) {
-        this.totalMiles += miles;
-        this.MPHRecorded.push(mph);
+        if(mph <= 100 && mph >= 5) {
+            this.totalMiles += miles;
+            this.MPHRecorded.push(mph);
+        }
     }
     checkForEligibility(start, end, miles) {
+        if(start == null || end == null || miles == null) {
+            return 'Something went wrong!';
+        }
         let normalizedMiles = Math.round(miles);
         let time = this.returnTimeforTripinHours(start, end);
         let mph = this.returnMPHTrip(time, normalizedMiles);
-        if(mph < 100 || mph > 5) {
-            this.recordDrive(mph, normalizedMiles);
-        }
+        this.recordDrive(mph, normalizedMiles);
 
     }
     returnMPHTrip(time, miles) {
+        if(time == null || miles == null){
+            return 0;
+        }
         return miles/time;
     }
     returnTimeforTripinHours(start, end) {
+        if(start == null || end == null) {
+            return 0;
+        }
         let startSplit = start.split(':');
         let endSplit = end.split(':');
         let startMinutes = (parseInt(startSplit[0])*60)+parseInt(startSplit[1]);

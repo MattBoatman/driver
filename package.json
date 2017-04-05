@@ -1,0 +1,23 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "root problem",
+  "main": "root.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattBoatman/driver.git"
+  },
+  "author": "Matt Boatman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattBoatman/driver/issues"
+  },
+  "homepage": "https://github.com/MattBoatman/driver#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^3.2.0"
+  }
+}

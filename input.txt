@@ -4,4 +4,13 @@ Trip Dan 07:15 07:45 17.3
 Trip Dan 06:12 06:32 12.9
 Trip Alex 12:01 13:16 42.0
 Trip Borat 12:01 13:16 42.0
+Trip Dan 07:15 07:45 17.3
+Trip Dan 06:12
+Trip Alex 12:01 13:16 42.0
+Trip Dan 07:15 07:45 17.3
+Trip Dan 06:12 06:32 
+Trip Alex 12:01 13:16 42.0
+Trip Dan 07:15 07:45 17.3
+Trip Dan 06:12 06:32 12.9
+Trip Alex 12:01 13:16 42.0
 Driver Dan
